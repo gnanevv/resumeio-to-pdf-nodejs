@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "lint": "npx eslint ."
   },
   "author": "gnanevv",
   "license": "MIT",
@@ -19,12 +20,16 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.14.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.8.5",
     "@types/pdfkit": "^0.13.5",
+    "eslint": "^9.14.0",
+    "globals": "^15.11.0",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
   }
 }
